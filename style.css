@@ -17,6 +17,34 @@ body{
   background-position: center;
   padding:110px 0;
 }
+.hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1.5s ease-in-out;
+  font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+/* Dark overlay for readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Fade animation helper */
+.hero.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
 #about p {
     font-size: 1.05rem;

@@ -77,3 +77,27 @@ document.addEventListener("submit", (e)=>{
     e.target.reset();
   }
 });
+
+const hero = document.querySelector(".hero");
+
+const images = [
+  "https://commons.wikimedia.org/wiki/Special:FilePath/Phnom_Banan_temple.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/7/7d/Aerial_view_of_Battambang_city.jpg",
+  // "images/banner3.jpg"
+];
+
+let index = 0;
+
+// initial image
+hero.style.backgroundImage = `url(${images[index]})`;
+
+setInterval(() => {
+  hero.classList.add("fade");
+
+  setTimeout(() => {
+    index = (index + 1) % images.length;
+    hero.style.backgroundImage = `url(${images[index]})`;
+    hero.classList.remove("fade");
+  }, 1000);
+
+}, 5000); // change every 5 seconds
