@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ទាក់ទងយើង — បាត់ដំបង</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        font-family: "Noto Sans Khmer", system-ui, sans-serif;
+      }
+      .hero {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("https://a.cdn-hotels.com/gdcs/production86/d943/93f991ef-9bad-4ac4-b11f-5d96bb2b54b0.jpg")
+            center/cover no-repeat;
+        color: white;
+        padding: 90px 0;
+      }
+      iframe {
+        border-radius: 10px;
+      }
+    </style>
+
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fa-solid fa-location-dot"></i> បាត់ដំបង
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destination.html">គោលដៅ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transport.html">ការធ្វើដំណើរ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">ការកក់</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">ដៃគូ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="contact.html">
+                ទាក់ទងយើង
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold">
+          <i class="fa-solid fa-envelope-open-text"></i> ទាក់ទងយើង
+        </h1>
+        <p class="lead mt-3">
+          យើងរីករាយក្នុងការឆ្លើយសំណួរ និងផ្តល់ព័ត៌មានដល់អ្នក
+        </p>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="container py-5">
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h4 class="mb-4">
+                <i class="fa-solid fa-paper-plane text-primary"></i>
+                ផ្ញើសារមកកាន់យើង
+              </h4>
+
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ឈ្មោះ</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">អ៊ីមែល</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">សារ</label>
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="សរសេរសាររបស់អ្នកនៅទីនេះ"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">
+                  <i class="fa-solid fa-paper-plane"></i> ផ្ញើសារ
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h4 class="mb-4">
+                <i class="fa-solid fa-map-location-dot text-primary"></i>
+                ព័ត៌មានទំនាក់ទំនង
+              </h4>
+
+              <p>
+                <i class="fa-solid fa-location-dot text-danger"></i>
+                ក្រុងបាត់ដំបង, ខេត្តបាត់ដំបង, កម្ពុជា
+              </p>
+
+              <p>
+                <i class="fa-solid fa-phone text-success"></i>
+                +855 12 345 678
+              </p>
+
+              <p>
+                <i class="fa-solid fa-envelope text-primary"></i>
+                info@battambangtravel.com
+              </p>
+
+              <h6 class="mt-4 mb-2">
+                <i class="fa-solid fa-map"></i> ទីតាំង (Google Map)
+              </h6>
+
+              <iframe
+                src="https://www.google.com/maps?q=Battambang,Cambodia&output=embed"
+                width="100%"
+                height="230"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-0">
+          <i class="fa-regular fa-copyright"></i>
+          2026 មគ្គុទេសក៍ទេសចរណ៍ក្រុងបាត់ដំបង
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

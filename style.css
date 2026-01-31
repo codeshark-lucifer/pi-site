@@ -1,0 +1,33 @@
+/* style.css — general styles */
+:root{
+  --primary:#0d6efd;
+  --accent:#0b5ed7;
+}
+
+body{
+  /* padding-top:66px; */
+  font-family: 'Noto Sans Khmer', sans-serif;
+  background:#fff;
+}
+
+/* hero */
+.hero{
+  background-image: linear-gradient(rgba(2,6,23,0.35), rgba(2,6,23,0.35)), url("https://commons.wikimedia.org/wiki/Special:FilePath/Phnom_Banan_temple.jpg");
+  background-size: cover;
+  background-position: center;
+  padding:110px 0;
+}
+
+#about p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* cards */
+.card img{ height:220px; object-fit:cover; }
+
+/* small screen tweak */
+@media (max-width:767px){
+  .hero{ padding:80px 0; }
+  .card img{ height:180px; }
+}
